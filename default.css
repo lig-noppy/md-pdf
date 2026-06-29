@@ -1,0 +1,140 @@
+/* ---- default page size ---- */
+@page {
+    size: A4;
+    margin: 16mm 14mm 18mm 14mm;
+}
+
+/* ---- page size preset ---- */
+/* Use <div class="page-a4-landscape"> ... </div> in Markdown */
+@page a4-landscape {
+    size: A4 landscape;
+    margin: 14mm 16mm 14mm 18mm;
+}
+
+@page a3 {
+    size: A3;
+    margin: 16mm 14mm 18mm 14mm;
+}
+
+@page a3-landscape {
+    size: A3 landscape;
+    margin: 14mm 16mm 14mm 18mm;
+}
+
+.page-a4-landscape {
+    page: a4-landscape;
+    break-before: page;
+}
+
+.page-a3 {
+    page: a3;
+    break-before: page;
+}
+
+.page-a3-landscape {
+    page: a3-landscape;
+    break-before: page;
+}
+
+.page-a4 {
+    page: auto;
+    break-before: page;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    font-family: "Noto Sans Mono CJK JP", monospace;
+    line-height: 1.65;
+    color: #111827;
+    font-variant-ligatures: none;
+    font-feature-settings: "liga" 0, "calt" 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #111827;
+    page-break-after: avoid;
+}
+
+h1 {
+    border-bottom: 1px solid #d1d5db;
+    padding-bottom: 0.2em;
+    margin-top: 1.4em;
+}
+
+h2 {
+    border-left: 4px solid #6b7280;
+    padding-left: 0.5em;
+    margin-top: 1.2em;
+}
+
+p,
+li {
+    orphans: 3;
+    widows: 3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 10px;
+}
+
+th,
+td {
+    border: 1px solid #cbd5e1;
+    padding: 6px 8px;
+    vertical-align: top;
+}
+
+th {
+    background: #f8fafc;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+pre,
+code {
+    font-family: "UDEV Gothic JPDOC", "Noto Sans Mono CJK JP", monospace;
+    font-variant-ligatures: none;
+    font-feature-settings: "liga" 0, "calt" 0;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    border: 1px solid #e5e7eb;
+    padding: 10px;
+    border-radius: 4px;
+    background: #f8fafc;
+}
+
+blockquote {
+    border-left: 3px solid #d1d5db;
+    padding-left: 1em;
+    color: #374151;
+}
+
+.page-break {
+    page-break-before: always;
+    break-before: page;
+}
+
+.title-page {
+    page-break-after: always;
+}
+
+.muted {
+    color: #6b7280;
+    font-size: 10px;
+}

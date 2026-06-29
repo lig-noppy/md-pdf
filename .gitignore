@@ -1,0 +1,26 @@
+# env
+.env
+.env.*
+!.env.example
+
+# package
+node_modules/
+
+# log
+*.log
+
+# cache, tmp
+.cache/
+tmp/
+temp/
+
+# OS files
+.DS_Store
+Thumbs.db
+Thumbs.db:encryptable
+$RECYCLE.BIN/
+*~
+
+# runtime manager
+.prototools
+

@@ -1,0 +1,18 @@
+{
+  "name": "md-pdf",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Markdown to PDF conversion tool",
+  "type": "module",
+  "bin": {
+    "md-pdf": "./bin/md-pdf.js"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "marked": "^15.0.7",
+    "mermaid": "^11.6.0",
+    "pdf-lib": "^1.17.1",
+    "playwright": "^1.52.0",
+    "yaml": "^2.7.0"
+  }
+}
